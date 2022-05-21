@@ -1,9 +1,8 @@
 """
 Created by hu-jinwen on 2022/4/27
 """
-import random
-
 import pygame
+import random
 
 # 定义屏幕大小的常量
 SCREEN_RECT = pygame.Rect(0, 0, 480, 700)
@@ -16,9 +15,10 @@ CREASTE_ENEMY_EVEVT = pygame.USEREVENT
 HERO_FIRE_EVENT = pygame.USEREVENT + 1
 
 # 定义敌机子弹发射事件
-ENEMY_FIRE_EVENT = pygame.USEREVENT +2
+ENEMY_FIRE_EVENT = pygame.USEREVENT + 2
 
 
+# 存储 图像数据 image 和 位置 rect 的 对象
 class GameSprite(pygame.sprite.Sprite):
 
     def __init__(self, self_name, speed=1):
